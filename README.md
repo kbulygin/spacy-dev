@@ -4,6 +4,6 @@ These files were used to fix https://github.com/explosion/spaCy/issues/2901. I p
 
 # Usage
 
-- Read `Makefile` (and update if necessary).
+- Read `Makefile` (and update it if necessary).
 - Read and modify `Dockerfile` and `commit.sh`.
 - Run `make`.
