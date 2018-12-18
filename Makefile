@@ -4,20 +4,22 @@ IMAGE_PY2 = python@sha256:1bb98a04d037d9766110499d36bf2f3a2aa43965b4aa345da91f6d
 IMAGE_PY3 = python@sha256:a837aefef8f2553789bc70436621160af4da65d95b0fb02d5032557f887d0ca5
 # python:3.7.1 (Debian Stretch), Sun Nov 11 17:29:43 +05 2018
 
-.PHONY: all build-py2 build-py3 run
-
+.PHONY: all
 all: commit
 
 # Note: Tags like `spacy-dev:py2` are not used to avoid accidental usage of
 # `spacy-dev` (the tag `latest` is considered nondeterministic here).
+.PHONY: build-py2
 build-py2:
 	docker build --build-arg IMAGE=$(IMAGE_PY2) -t spacy-dev-py2 .
+.PHONY: build-py3
 build-py3:
 	docker build --build-arg IMAGE=$(IMAGE_PY3) -t spacy-dev-py3 .
 
 pytest-%.log: build-%
 	./get-asset.sh spacy-dev-$* /root/spaCy/pytest.log $@
 
+.PHONY: commit
 commit: pytest-py2.log pytest-py3.log
 	[ "`tail -n1 pytest-py2.log`" = '[exit 0]' ]
 	[ "`tail -n1 pytest-py3.log`" = '[exit 0]' ]
