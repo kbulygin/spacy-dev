@@ -4,4 +4,6 @@ These files were used to fix explosion/spaCy#2901. I publish them because they c
 
 # Usage
 
-Read and modify `Dockerfile`, run `make` and (before publishing) `make run`.
+- Read `Makefile` (and update if necessary).
+- Read and modify `Dockerfile` and `commit.sh`.
+- Run `make`.
