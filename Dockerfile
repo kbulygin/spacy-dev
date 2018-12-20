@@ -29,9 +29,9 @@ RUN pip install -r requirements.txt
 RUN python setup.py build_ext --inplace
 
 # Make actual changes:
-COPY kbulygin.md .github/contributors/
-COPY test_issue2901.py spacy/tests/regression/
-COPY __init__.py spacy/lang/ja/
+COPY changes/kbulygin.md .github/contributors/
+COPY changes/test_issue2901.py spacy/tests/regression/
+COPY changes/__init__.py spacy/lang/ja/
 
 # To access the logs, run `make pytest.log` after **successful** building.
 RUN ( py.test --slow spacy/tests 2>&1; echo "[exit $?]" ) | tee pytest.log

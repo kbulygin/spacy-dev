@@ -1,9 +1,10 @@
 # General description
 
-These files were used to fix https://github.com/explosion/spaCy/issues/2901. I publish them because they could help others who are new to making changes with Git and GitHub.
+These files were used to fix https://github.com/explosion/spaCy/issues/2901. I publish them for reproducability and because they could help others who are new to making changes with GitHub.
 
-# Usage
+# Usage (as a boilerplate)
 
 - Read `Makefile` (and update it if necessary).
 - Read and modify `Dockerfile` and `commit.sh`.
+- Update `changes/`.
 - Run `make`.
