@@ -12,7 +12,6 @@ RUN \
   if python --version 2>&1 | grep -q 'Python 3'; then \
     pip install mecab-python3==0.996.1; \
   fi
-RUN pip install pymorphy2 pythainlp pyvi
 
 WORKDIR /root/spaCy
 
