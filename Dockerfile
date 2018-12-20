@@ -12,6 +12,7 @@ RUN \
   if python --version 2>&1 | grep -q 'Python 3'; then \
     pip install mecab-python3==0.996.1; \
   fi
+RUN pip install pymorphy2 pythainlp pyvi
 
 WORKDIR /root/spaCy
 
@@ -33,7 +34,6 @@ COPY test_issue2901.py spacy/tests/regression/
 COPY __init__.py spacy/lang/ja/
 
 # To access the logs, run `make pytest.log` after **successful** building.
-RUN ( py.test -x --slow spacy/tests 2>&1; echo "[exit $?]" ) | tee pytest.log
-RUN tail -n1 pytest.log | grep -qF '[exit 0]'
+RUN ( py.test --slow spacy/tests 2>&1; echo "[exit $?]" ) | tee pytest.log
 
 COPY commit.sh ./
