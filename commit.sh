@@ -7,7 +7,7 @@ email=EMAIL
 display_name=DISPLAY_NAME
 
 # shellcheck disable=SC2016
-message='`Making `lang/th/test_tokenizer.py` pass by creating `ThaiTokenizer`'
+message='Making `lang/th/test_tokenizer.py` pass by creating `ThaiTokenizer`'
 # (Note: Unfortunately, both `explosion/spaCy#2901` and `#2901` led to a
 # premature mention on the issue page.)
 
