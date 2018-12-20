@@ -1,0 +1,1274 @@
+============================= test session starts ==============================
+platform linux2 -- Python 2.7.15, pytest-4.0.2, py-1.7.0, pluggy-0.8.0
+rootdir: /root/spaCy, inifile:
+collected 1692 items
+
+spacy/tests/test_matcher.py ......................                       [  1%]
+spacy/tests/test_misc.py ...........                                     [  1%]
+spacy/tests/test_pickles.py ..                                           [  2%]
+spacy/tests/test_symlink_windows.py .                                    [  2%]
+spacy/tests/test_underscore.py .....................                     [  3%]
+spacy/tests/doc/test_add_entities.py ..                                  [  3%]
+spacy/tests/doc/test_array.py .....                                      [  3%]
+spacy/tests/doc/test_creation.py ...                                     [  3%]
+spacy/tests/doc/test_doc_api.py .................                        [  4%]
+spacy/tests/doc/test_pickle_doc.py .....                                 [  5%]
+spacy/tests/doc/test_span.py ..............                              [  6%]
+spacy/tests/doc/test_span_merge.py ........                              [  6%]
+spacy/tests/doc/test_token_api.py ..........                             [  7%]
+spacy/tests/gold/test_biluo.py .....                                     [  7%]
+spacy/tests/gold/test_lev_align.py ..........                            [  8%]
+spacy/tests/lang/test_attrs.py ...................................       [ 10%]
+spacy/tests/lang/ar/test_exceptions.py .....                             [ 10%]
+spacy/tests/lang/ar/test_text.py .                                       [ 10%]
+spacy/tests/lang/bn/test_tokenizer.py ..........                         [ 11%]
+spacy/tests/lang/ca/test_exception.py ....                               [ 11%]
+spacy/tests/lang/ca/test_text.py .................                       [ 12%]
+spacy/tests/lang/da/test_exceptions.py .................                 [ 13%]
+spacy/tests/lang/da/test_lemma.py ....                                   [ 13%]
+spacy/tests/lang/da/test_prefix_suffix_infix.py ........................ [ 14%]
+........                                                                 [ 15%]
+spacy/tests/lang/da/test_text.py ............                            [ 16%]
+spacy/tests/lang/de/test_exceptions.py .............                     [ 16%]
+spacy/tests/lang/de/test_lemma.py ......                                 [ 17%]
+spacy/tests/lang/de/test_models.py ssssss                                [ 17%]
+spacy/tests/lang/de/test_parser.py ..                                    [ 17%]
+spacy/tests/lang/de/test_prefix_suffix_infix.py ........................ [ 19%]
+                                                                         [ 19%]
+spacy/tests/lang/de/test_text.py .......                                 [ 19%]
+spacy/tests/lang/el/test_exception.py .....                              [ 19%]
+spacy/tests/lang/el/test_text.py ......                                  [ 20%]
+spacy/tests/lang/en/test_customized_tokenizer.py .                       [ 20%]
+spacy/tests/lang/en/test_exceptions.py ................................. [ 22%]
+................                                                         [ 23%]
+spacy/tests/lang/en/test_indices.py ..                                   [ 23%]
+spacy/tests/lang/en/test_lemmatizer.py sssssssss                         [ 23%]
+spacy/tests/lang/en/test_models.py sssssss                               [ 24%]
+spacy/tests/lang/en/test_ner.py sss                                      [ 24%]
+spacy/tests/lang/en/test_noun_chunks.py .                                [ 24%]
+spacy/tests/lang/en/test_parser.py .....                                 [ 24%]
+spacy/tests/lang/en/test_prefix_suffix_infix.py .......................x [ 26%]
+x                                                                        [ 26%]
+spacy/tests/lang/en/test_punct.py ...................................... [ 28%]
+.                                                                        [ 28%]
+spacy/tests/lang/en/test_sbd.py ....xsssssssssssssssssssssssssssssssssss [ 30%]
+ssssssssssssssssss                                                       [ 31%]
+spacy/tests/lang/en/test_tagger.py .sss                                  [ 32%]
+spacy/tests/lang/en/test_text.py .......x...........                     [ 33%]
+spacy/tests/lang/es/test_exception.py .....                              [ 33%]
+spacy/tests/lang/es/test_text.py ......                                  [ 33%]
+spacy/tests/lang/fi/test_tokenizer.py ..                                 [ 34%]
+spacy/tests/lang/fr/test_exceptions.py ..............                    [ 34%]
+spacy/tests/lang/fr/test_lemmatization.py ssss                           [ 35%]
+spacy/tests/lang/fr/test_text.py .                                       [ 35%]
+spacy/tests/lang/ga/test_tokenizer.py ..                                 [ 35%]
+spacy/tests/lang/he/test_tokenizer.py ......                             [ 35%]
+spacy/tests/lang/hu/test_tokenizer.py .x...x............x...x........... [ 37%]
+........................................................................ [ 41%]
+........................................................................ [ 46%]
+.................................................................        [ 50%]
+spacy/tests/lang/id/test_prefix_suffix_infix.py ........................ [ 51%]
+.                                                                        [ 51%]
+spacy/tests/lang/ja/test_lemma.py sssss                                  [ 51%]
+spacy/tests/lang/ja/test_tokenizer.py sssss                              [ 52%]
+spacy/tests/lang/nb/test_tokenizer.py ..                                 [ 52%]
+spacy/tests/lang/ro/test_lemmatizer.py ....                              [ 52%]
+spacy/tests/lang/ro/test_tokenizer.py ......                             [ 52%]
+spacy/tests/lang/ru/test_lemmatizer.py sssssssssssssssssssss             [ 54%]
+spacy/tests/lang/ru/test_tokenizer.py .................................. [ 56%]
+.....                                                                    [ 56%]
+spacy/tests/lang/ru/test_tokenizer_exc.py ...                            [ 56%]
+spacy/tests/lang/sv/test_tokenizer.py .......                            [ 56%]
+spacy/tests/lang/th/test_tokenizer.py .                                  [ 57%]
+spacy/tests/lang/tr/test_lemmatization.py .......                        [ 57%]
+spacy/tests/lang/tt/test_tokenizer.py ..................                 [ 58%]
+spacy/tests/lang/ur/test_text.py ...                                     [ 58%]
+spacy/tests/parser/test_add_label.py .x                                  [ 58%]
+spacy/tests/parser/test_beam_parse.py s.                                 [ 58%]
+spacy/tests/parser/test_ner.py ....                                      [ 59%]
+spacy/tests/parser/test_neural_parser.py ......                          [ 59%]
+spacy/tests/parser/test_nn_beam.py ...                                   [ 59%]
+spacy/tests/parser/test_nonproj.py .....                                 [ 59%]
+spacy/tests/parser/test_parse.py .xx..x                                  [ 60%]
+spacy/tests/parser/test_parse_navigate.py ...                            [ 60%]
+spacy/tests/parser/test_preset_sbd.py ....                               [ 60%]
+spacy/tests/parser/test_space_attachment.py ..xxxx                       [ 61%]
+spacy/tests/parser/test_to_from_bytes_disk.py .                          [ 61%]
+spacy/tests/pipeline/test_factories.py ..                                [ 61%]
+spacy/tests/pipeline/test_pipe_methods.py ..............                 [ 62%]
+spacy/tests/pipeline/test_textcat.py .                                   [ 62%]
+spacy/tests/regression/test_issue118.py ....                             [ 62%]
+spacy/tests/regression/test_issue1207.py s                               [ 62%]
+spacy/tests/regression/test_issue1242.py .s                              [ 62%]
+spacy/tests/regression/test_issue1250.py .                               [ 62%]
+spacy/tests/regression/test_issue1253.py s                               [ 62%]
+spacy/tests/regression/test_issue1257.py .                               [ 62%]
+spacy/tests/regression/test_issue1305.py s                               [ 62%]
+spacy/tests/regression/test_issue1375.py .                               [ 62%]
+spacy/tests/regression/test_issue1380.py .s                              [ 63%]
+spacy/tests/regression/test_issue1387.py .                               [ 63%]
+spacy/tests/regression/test_issue1434.py .                               [ 63%]
+spacy/tests/regression/test_issue1450.py ......                          [ 63%]
+spacy/tests/regression/test_issue1488.py .                               [ 63%]
+spacy/tests/regression/test_issue1494.py .                               [ 63%]
+spacy/tests/regression/test_issue1506.py .                               [ 63%]
+spacy/tests/regression/test_issue1518.py .                               [ 63%]
+spacy/tests/regression/test_issue1537.py .                               [ 63%]
+spacy/tests/regression/test_issue1539.py .                               [ 63%]
+spacy/tests/regression/test_issue1547.py .                               [ 63%]
+spacy/tests/regression/test_issue1612.py .                               [ 63%]
+spacy/tests/regression/test_issue1654.py .                               [ 64%]
+spacy/tests/regression/test_issue1660.py s                               [ 64%]
+spacy/tests/regression/test_issue1698.py ..                              [ 64%]
+spacy/tests/regression/test_issue1727.py .                               [ 64%]
+spacy/tests/regression/test_issue1757.py .                               [ 64%]
+spacy/tests/regression/test_issue1758.py .                               [ 64%]
+spacy/tests/regression/test_issue1769.py ...........                     [ 65%]
+spacy/tests/regression/test_issue1799.py .                               [ 65%]
+spacy/tests/regression/test_issue1807.py .                               [ 65%]
+spacy/tests/regression/test_issue1834.py .                               [ 65%]
+spacy/tests/regression/test_issue1868.py .                               [ 65%]
+spacy/tests/regression/test_issue1883.py .                               [ 65%]
+spacy/tests/regression/test_issue1915.py .                               [ 65%]
+spacy/tests/regression/test_issue1919.py s                               [ 65%]
+spacy/tests/regression/test_issue1945.py .                               [ 65%]
+spacy/tests/regression/test_issue1959.py s                               [ 65%]
+spacy/tests/regression/test_issue1967.py .                               [ 65%]
+spacy/tests/regression/test_issue2179.py x                               [ 65%]
+spacy/tests/regression/test_issue2219.py .                               [ 65%]
+spacy/tests/regression/test_issue2361.py .                               [ 65%]
+spacy/tests/regression/test_issue2385.py ......                          [ 66%]
+spacy/tests/regression/test_issue242.py .                                [ 66%]
+spacy/tests/regression/test_issue2626.py .                               [ 66%]
+spacy/tests/regression/test_issue2800.py .                               [ 66%]
+spacy/tests/regression/test_issue2901.py s                               [ 66%]
+spacy/tests/regression/test_issue309.py .                                [ 66%]
+spacy/tests/regression/test_issue351.py .                                [ 66%]
+spacy/tests/regression/test_issue360.py .                                [ 66%]
+spacy/tests/regression/test_issue361.py .                                [ 66%]
+spacy/tests/regression/test_issue401.py ss                               [ 66%]
+spacy/tests/regression/test_issue429.py s                                [ 66%]
+spacy/tests/regression/test_issue514.py s                                [ 66%]
+spacy/tests/regression/test_issue54.py s                                 [ 66%]
+spacy/tests/regression/test_issue587.py .                                [ 66%]
+spacy/tests/regression/test_issue588.py .                                [ 67%]
+spacy/tests/regression/test_issue589.py x                                [ 67%]
+spacy/tests/regression/test_issue590.py .                                [ 67%]
+spacy/tests/regression/test_issue595.py .                                [ 67%]
+spacy/tests/regression/test_issue599.py .                                [ 67%]
+spacy/tests/regression/test_issue600.py .                                [ 67%]
+spacy/tests/regression/test_issue615.py .                                [ 67%]
+spacy/tests/regression/test_issue686.py ss                               [ 67%]
+spacy/tests/regression/test_issue693.py s                                [ 67%]
+spacy/tests/regression/test_issue704.py s                                [ 67%]
+spacy/tests/regression/test_issue717.py sss                              [ 67%]
+spacy/tests/regression/test_issue719.py s                                [ 67%]
+spacy/tests/regression/test_issue736.py ..                               [ 67%]
+spacy/tests/regression/test_issue740.py ..                               [ 68%]
+spacy/tests/regression/test_issue743.py .                                [ 68%]
+spacy/tests/regression/test_issue744.py ..                               [ 68%]
+spacy/tests/regression/test_issue758.py s                                [ 68%]
+spacy/tests/regression/test_issue759.py ...                              [ 68%]
+spacy/tests/regression/test_issue768.py ss                               [ 68%]
+spacy/tests/regression/test_issue775.py ....                             [ 68%]
+spacy/tests/regression/test_issue781.py sss                              [ 69%]
+spacy/tests/regression/test_issue792.py ....                             [ 69%]
+spacy/tests/regression/test_issue801.py .......                          [ 69%]
+spacy/tests/regression/test_issue805.py ..                               [ 69%]
+spacy/tests/regression/test_issue834.py x                                [ 69%]
+spacy/tests/regression/test_issue850.py .x                               [ 69%]
+spacy/tests/regression/test_issue852.py ....                             [ 70%]
+spacy/tests/regression/test_issue859.py ..                               [ 70%]
+spacy/tests/regression/test_issue886.py .                                [ 70%]
+spacy/tests/regression/test_issue891.py .                                [ 70%]
+spacy/tests/regression/test_issue903.py ..                               [ 70%]
+spacy/tests/regression/test_issue910.py s                                [ 70%]
+spacy/tests/regression/test_issue912.py .                                [ 70%]
+spacy/tests/regression/test_issue957.py .                                [ 70%]
+spacy/tests/regression/test_issue995.py s                                [ 70%]
+spacy/tests/regression/test_issue999.py x                                [ 70%]
+spacy/tests/serialize/test_serialization.py .x                           [ 70%]
+spacy/tests/serialize/test_serialize_doc.py ...                          [ 71%]
+spacy/tests/serialize/test_serialize_empty_model.py .                    [ 71%]
+spacy/tests/serialize/test_serialize_extension_attrs.py .                [ 71%]
+spacy/tests/serialize/test_serialize_language.py .                       [ 71%]
+spacy/tests/serialize/test_serialize_parser_ner.py ....                  [ 71%]
+spacy/tests/serialize/test_serialize_stringstore.py ....                 [ 71%]
+spacy/tests/serialize/test_serialize_tagger.py X.                        [ 71%]
+spacy/tests/serialize/test_serialize_tensorizer.py ..                    [ 72%]
+spacy/tests/serialize/test_serialize_tokenizer.py xxxX                   [ 72%]
+spacy/tests/serialize/test_serialize_vocab.py ......                     [ 72%]
+spacy/tests/stringstore/test_freeze_string_store.py x                    [ 72%]
+spacy/tests/stringstore/test_stringstore.py ............                 [ 73%]
+spacy/tests/tokenizer/test_exceptions.py .......                         [ 73%]
+spacy/tests/tokenizer/test_naughty_strings.py .......................... [ 75%]
+.........................................................                [ 78%]
+spacy/tests/tokenizer/test_tokenizer.py ..................               [ 79%]
+spacy/tests/tokenizer/test_urls.py ...........................xxxxxxxxxx [ 81%]
+..................................xxxx.................................. [ 86%]
+........................................................................ [ 90%]
+........................................................................ [ 94%]
+..........................                                               [ 96%]
+spacy/tests/tokenizer/test_whitespace.py .......                         [ 96%]
+spacy/tests/vectors/test_similarity.py .....                             [ 96%]
+spacy/tests/vectors/test_vectors.py ......................               [ 98%]
+spacy/tests/vocab/test_add_vectors.py ..                                 [ 98%]
+spacy/tests/vocab/test_lexeme.py .......                                 [ 98%]
+spacy/tests/vocab/test_vocab_api.py ....................                 [100%]
+
+=============================== warnings summary ===============================
+spacy/tests/test_misc.py::test_displacy_parse_deps
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+
+spacy/tests/test_pickles.py::test_pickle_vocab[dog-cat]
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+
+spacy/tests/doc/test_doc_api.py::test_doc_api_serialize[Give it back! He pleaded.]
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+
+spacy/tests/doc/test_doc_api.py::test_doc_api_serialize[ Give it back! He pleaded. ]
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+
+spacy/tests/doc/test_pickle_doc.py::test_pickle_single_doc
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+
+spacy/tests/doc/test_pickle_doc.py::test_list_of_docs_pickles_efficiently
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+
+spacy/tests/doc/test_pickle_doc.py::test_user_data_from_disk
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+
+spacy/tests/doc/test_pickle_doc.py::test_user_data_unpickles
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+
+spacy/tests/doc/test_pickle_doc.py::test_hooks_unpickle
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+
+spacy/tests/parser/test_to_from_bytes_disk.py::test_to_from_bytes
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:184: PendingDeprecationWarning: encoding is deprecated, Use raw=False instead.
+    return _unpackb(packed, **kwargs)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:184: PendingDeprecationWarning: encoding is deprecated, Use raw=False instead.
+    return _unpackb(packed, **kwargs)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:184: PendingDeprecationWarning: encoding is deprecated, Use raw=False instead.
+    return _unpackb(packed, **kwargs)
+
+spacy/tests/regression/test_issue1727.py::test_issue1727
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:184: PendingDeprecationWarning: encoding is deprecated, Use raw=False instead.
+    return _unpackb(packed, **kwargs)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:184: PendingDeprecationWarning: encoding is deprecated, Use raw=False instead.
+    return _unpackb(packed, **kwargs)
+
+spacy/tests/regression/test_issue1834.py::test_issue1834
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+
+spacy/tests/regression/test_issue1883.py::test_issue1883
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+
+spacy/tests/regression/test_issue2179.py::test_issue2179
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:184: PendingDeprecationWarning: encoding is deprecated, Use raw=False instead.
+    return _unpackb(packed, **kwargs)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:184: PendingDeprecationWarning: encoding is deprecated, Use raw=False instead.
+    return _unpackb(packed, **kwargs)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:184: PendingDeprecationWarning: encoding is deprecated, Use raw=False instead.
+    return _unpackb(packed, **kwargs)
+
+spacy/tests/regression/test_issue2361.py::test_issue2361
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+
+spacy/tests/regression/test_issue599.py::test_issue599
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+
+spacy/tests/serialize/test_serialization.py::test_serialize_empty_doc
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+
+spacy/tests/serialize/test_serialization.py::test_serialize_vocab[rat]
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+
+spacy/tests/serialize/test_serialize_doc.py::test_serialize_doc_roundtrip_bytes
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+
+spacy/tests/serialize/test_serialize_doc.py::test_serialize_doc_roundtrip_disk
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+
+spacy/tests/serialize/test_serialize_doc.py::test_serialize_doc_roundtrip_disk_str_path
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+
+spacy/tests/serialize/test_serialize_empty_model.py::test_bytes_serialize_issue_1105
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+
+spacy/tests/serialize/test_serialize_extension_attrs.py::test_serialize_ext_attrs_from_bytes
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+
+spacy/tests/serialize/test_serialize_language.py::test_serialize_language_meta_disk
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+
+spacy/tests/serialize/test_serialize_parser_ner.py::test_serialize_parser_roundtrip_bytes[DependencyParser]
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:184: PendingDeprecationWarning: encoding is deprecated, Use raw=False instead.
+    return _unpackb(packed, **kwargs)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:184: PendingDeprecationWarning: encoding is deprecated, Use raw=False instead.
+    return _unpackb(packed, **kwargs)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:184: PendingDeprecationWarning: encoding is deprecated, Use raw=False instead.
+    return _unpackb(packed, **kwargs)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+
+spacy/tests/serialize/test_serialize_parser_ner.py::test_serialize_parser_roundtrip_bytes[EntityRecognizer]
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:184: PendingDeprecationWarning: encoding is deprecated, Use raw=False instead.
+    return _unpackb(packed, **kwargs)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:184: PendingDeprecationWarning: encoding is deprecated, Use raw=False instead.
+    return _unpackb(packed, **kwargs)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:184: PendingDeprecationWarning: encoding is deprecated, Use raw=False instead.
+    return _unpackb(packed, **kwargs)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+
+spacy/tests/serialize/test_serialize_parser_ner.py::test_serialize_parser_roundtrip_disk[DependencyParser]
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:184: PendingDeprecationWarning: encoding is deprecated, Use raw=False instead.
+    return _unpackb(packed, **kwargs)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:184: PendingDeprecationWarning: encoding is deprecated, Use raw=False instead.
+    return _unpackb(packed, **kwargs)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:184: PendingDeprecationWarning: encoding is deprecated, Use raw=False instead.
+    return _unpackb(packed, **kwargs)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+
+spacy/tests/serialize/test_serialize_parser_ner.py::test_serialize_parser_roundtrip_disk[EntityRecognizer]
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:184: PendingDeprecationWarning: encoding is deprecated, Use raw=False instead.
+    return _unpackb(packed, **kwargs)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:184: PendingDeprecationWarning: encoding is deprecated, Use raw=False instead.
+    return _unpackb(packed, **kwargs)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:184: PendingDeprecationWarning: encoding is deprecated, Use raw=False instead.
+    return _unpackb(packed, **kwargs)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+
+spacy/tests/serialize/test_serialize_tagger.py::test_serialize_tagger_roundtrip_bytes
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:184: PendingDeprecationWarning: encoding is deprecated, Use raw=False instead.
+    return _unpackb(packed, **kwargs)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:184: PendingDeprecationWarning: encoding is deprecated, Use raw=False instead.
+    return _unpackb(packed, **kwargs)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:184: PendingDeprecationWarning: encoding is deprecated, Use raw=False instead.
+    return _unpackb(packed, **kwargs)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:184: PendingDeprecationWarning: encoding is deprecated, Use raw=False instead.
+    return _unpackb(packed, **kwargs)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+
+spacy/tests/serialize/test_serialize_tagger.py::test_serialize_tagger_roundtrip_disk
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:184: PendingDeprecationWarning: encoding is deprecated, Use raw=False instead.
+    return _unpackb(packed, **kwargs)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:184: PendingDeprecationWarning: encoding is deprecated, Use raw=False instead.
+    return _unpackb(packed, **kwargs)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:184: PendingDeprecationWarning: encoding is deprecated, Use raw=False instead.
+    return _unpackb(packed, **kwargs)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:184: PendingDeprecationWarning: encoding is deprecated, Use raw=False instead.
+    return _unpackb(packed, **kwargs)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+
+spacy/tests/serialize/test_serialize_tensorizer.py::test_serialize_tensorizer_roundtrip_bytes
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:184: PendingDeprecationWarning: encoding is deprecated, Use raw=False instead.
+    return _unpackb(packed, **kwargs)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+
+spacy/tests/serialize/test_serialize_tensorizer.py::test_serialize_tensorizer_roundtrip_disk
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:184: PendingDeprecationWarning: encoding is deprecated, Use raw=False instead.
+    return _unpackb(packed, **kwargs)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+
+spacy/tests/serialize/test_serialize_tokenizer.py::test_serialize_tokenizer_roundtrip_bytes[I\U0001f49cyou]
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:184: PendingDeprecationWarning: encoding is deprecated, Use raw=False instead.
+    return _unpackb(packed, **kwargs)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:184: PendingDeprecationWarning: encoding is deprecated, Use raw=False instead.
+    return _unpackb(packed, **kwargs)
+
+spacy/tests/serialize/test_serialize_tokenizer.py::test_serialize_tokenizer_roundtrip_bytes[they\u2019re]
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:184: PendingDeprecationWarning: encoding is deprecated, Use raw=False instead.
+    return _unpackb(packed, **kwargs)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:184: PendingDeprecationWarning: encoding is deprecated, Use raw=False instead.
+    return _unpackb(packed, **kwargs)
+
+spacy/tests/serialize/test_serialize_tokenizer.py::test_serialize_tokenizer_roundtrip_bytes[\u201chello\u201d]
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:184: PendingDeprecationWarning: encoding is deprecated, Use raw=False instead.
+    return _unpackb(packed, **kwargs)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:184: PendingDeprecationWarning: encoding is deprecated, Use raw=False instead.
+    return _unpackb(packed, **kwargs)
+
+spacy/tests/serialize/test_serialize_tokenizer.py::test_serialize_tokenizer_roundtrip_disk
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+
+spacy/tests/serialize/test_serialize_vocab.py::test_serialize_vocab_roundtrip_bytes[strings10-strings20]
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+
+spacy/tests/serialize/test_serialize_vocab.py::test_serialize_vocab_roundtrip_bytes[strings11-strings21]
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+
+spacy/tests/serialize/test_serialize_vocab.py::test_serialize_vocab_roundtrip_disk[strings10-strings20]
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+
+spacy/tests/serialize/test_serialize_vocab.py::test_serialize_vocab_roundtrip_disk[strings11-strings21]
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+
+spacy/tests/serialize/test_serialize_vocab.py::test_serialize_vocab_lex_attrs_bytes[strings0-Hello]
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+
+spacy/tests/serialize/test_serialize_vocab.py::test_serialize_vocab_lex_attrs_disk[strings0-Hello]
+  /usr/local/lib/python2.7/site-packages/msgpack_numpy.py:133: PendingDeprecationWarning: encoding is deprecated.
+    use_bin_type=use_bin_type)
+
+-- Docs: https://docs.pytest.org/en/latest/warnings.html
+ 1503 passed, 147 skipped, 40 xfailed, 2 xpassed, 484 warnings in 330.03 seconds 
+[exit 0]

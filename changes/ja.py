@@ -4,7 +4,6 @@ from __future__ import unicode_literals, print_function
 from ...language import Language
 from ...attrs import LANG
 from ...tokens import Doc, Token
-from ...tokenizer import Tokenizer
 from .tag_map import TAG_MAP
 
 import re
@@ -112,7 +111,6 @@ class JapaneseDefaults(Language.Defaults):
 class Japanese(Language):
     lang = 'ja'
     Defaults = JapaneseDefaults
-    Tokenizer = JapaneseTokenizer
 
     def make_doc(self, text):
         return self.tokenizer(text)

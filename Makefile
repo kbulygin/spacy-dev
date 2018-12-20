@@ -23,4 +23,4 @@ pytest-%.log: build-%
 commit: pytest-py2.log pytest-py3.log
 	[ "`tail -n1 pytest-py2.log`" = '[exit 0]' ]
 	[ "`tail -n1 pytest-py3.log`" = '[exit 0]' ]
-	docker run --rm -it --name=spacy-dev-py3 spacy-dev-py3 ./commit.sh
+	docker run --rm -it --name=spacy-dev-py3 spacy-dev-py3 /root/commit.sh

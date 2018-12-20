@@ -1,6 +1,6 @@
 # General description
 
-These files were used to fix https://github.com/explosion/spaCy/issues/2901. I publish them for reproducability and because they could help others who are new to making changes with GitHub.
+These files were originally used to fix https://github.com/explosion/spaCy/issues/2901. I publish them for reproducability and because they could help others who are new to making changes with GitHub.
 
 # Usage (as a boilerplate)
 
