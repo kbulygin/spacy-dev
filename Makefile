@@ -16,11 +16,11 @@ build-py2:
 build-py3:
 	docker build --build-arg IMAGE=$(IMAGE_PY3) -t spacy-dev-py3 .
 
-pytest-%.log: build-%
+logs/pytest-%.log: build-%
 	./get-asset.sh spacy-dev-$* /root/spaCy/pytest.log $@
 
 .PHONY: commit
-commit: pytest-py2.log pytest-py3.log
-	[ "`tail -n1 pytest-py2.log`" = '[exit 0]' ]
-	[ "`tail -n1 pytest-py3.log`" = '[exit 0]' ]
+commit: logs/pytest-py2.log logs/pytest-py3.log
+	[ "`tail -n1 logs/pytest-py2.log`" = '[exit 0]' ]
+	[ "`tail -n1 logs/pytest-py3.log`" = '[exit 0]' ]
 	docker run --rm -it --name=spacy-dev-py3 spacy-dev-py3 /root/commit.sh
